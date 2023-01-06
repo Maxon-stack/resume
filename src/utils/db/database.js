@@ -109,7 +109,7 @@ const database = {
       id: 1,
       title: "T-shirt Mockup",
       subtitle: "A beautiful t-shirt mockup.",
-      imageUrl: "/images/portfolio-image-1.jpg",
+      imageUrl: "/resume/images/portfolio-image-1.jpg",
       largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
       url: 'https://dribbble.com'
     },

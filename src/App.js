@@ -14,7 +14,7 @@ import Skills from "./pages/Skills";
 
 function App() {
   const [lightMode, setLightMode] = useState(false); // Made it true if you want to load your site light mode primary
-
+  console.log(process.env.PUBLIC_URL)
   lightMode
     ? document.body.classList.add("light")
     : document.body.classList.remove("light");
@@ -30,7 +30,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/resume">
     {
       /*
             <div className="light-mode">
@@ -47,7 +47,7 @@ function App() {
       */
     }
       <Routes>
-        <Route path="/" index element={<Home lightMode={lightMode} />} />
+        <Route path={`/`} index element={<Home lightMode={lightMode} />} />
         <Route path="about" element={<About />} />
         <Route path="resume" element={<Resumes />} />
         <Route path="portfolio" element={<Portfolio />} />

@@ -82,7 +82,7 @@ function Header() {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://nuclearthemes.com"
+              href=""
             >
               Maxon Corvil
             </a>
