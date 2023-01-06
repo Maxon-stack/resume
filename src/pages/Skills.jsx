@@ -23,7 +23,6 @@ const Skills = () => {
         />
       </Helmet>
       <div className="mi-skills-area mi-section mi-padding-top">
-      <div className="mi-skills-area mi-section mi-padding-top">
           <div className="container">
             <Sectiontitle title="Skills" />
             <div className="mi-skills">
@@ -40,7 +39,6 @@ const Skills = () => {
  
           </div>
         </div>
-      </div>
     </Layout>
   )
 }

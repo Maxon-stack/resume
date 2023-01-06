@@ -1,4 +1,3 @@
-import Disqus from "disqus-react";
 import Markdown from "markdown-to-jsx";
 import React, { Suspense, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
@@ -24,13 +23,6 @@ function BlogDetails(props) {
       .catch((err) => console.log(err));
   });
 
-  const disqusShortname = "chester-react"; //found in your Disqus.com dashboard
-  const disqusConfig = {
-    url: "https://tf-react-chester.now.sh/", //Homepage link of this site.
-    identifier: blogId,
-    title: blogFile,
-  };
-
   return (
     <Layout>
       <Helmet>
@@ -46,10 +38,6 @@ function BlogDetails(props) {
             <Markdown>{content}</Markdown>
             <Suspense fallback={<h1>loading...</h1>}>
               <div className="mi-blog-details-comments mt-30">
-                <Disqus.DiscussionEmbed
-                  shortname={disqusShortname}
-                  config={disqusConfig}
-                />
               </div>
             </Suspense>
           </div>

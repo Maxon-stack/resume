@@ -5,7 +5,7 @@ function Particle({lightMode}) {
   const paramConfig = {
     particles: {
       number: {
-        value: 200,
+        value: 100,
         density: {
           enable: false,
         },
