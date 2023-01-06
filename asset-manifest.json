@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/resume/static/css/main.a462aa78.css",
-    "main.js": "/resume/static/js/main.aaf21dc8.js",
+    "main.js": "/resume/static/js/main.33900dfb.js",
     "static/js/939.f7eae96d.chunk.js": "/resume/static/js/939.f7eae96d.chunk.js",
     "static/js/2.f921982f.chunk.js": "/resume/static/js/2.f921982f.chunk.js",
     "static/js/307.9a19df6b.chunk.js": "/resume/static/js/307.9a19df6b.chunk.js",
@@ -16,7 +16,7 @@
     "static/js/763.62b860a9.chunk.js": "/resume/static/js/763.62b860a9.chunk.js",
     "static/js/190.45452939.chunk.js": "/resume/static/js/190.45452939.chunk.js",
     "static/js/529.6150240e.chunk.js": "/resume/static/js/529.6150240e.chunk.js",
-    "static/js/324.9482551c.chunk.js": "/resume/static/js/324.9482551c.chunk.js",
+    "static/js/324.ac5169c6.chunk.js": "/resume/static/js/324.ac5169c6.chunk.js",
     "static/media/profile.jpg": "/resume/static/media/profile.a6cd0df2e10c8e7989cf.jpg",
     "static/media/Maxon_Corvil_Resume_2023.pdf": "/resume/static/media/Maxon_Corvil_Resume_2023.12f4859b0f410a37ed14.pdf",
     "static/media/slick.svg": "/resume/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -40,10 +40,10 @@
     "static/media/slick.woff": "/resume/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/resume/index.html",
     "main.a462aa78.css.map": "/resume/static/css/main.a462aa78.css.map",
-    "main.aaf21dc8.js.map": "/resume/static/js/main.aaf21dc8.js.map"
+    "main.33900dfb.js.map": "/resume/static/js/main.33900dfb.js.map"
   },
   "entrypoints": [
     "static/css/main.a462aa78.css",
-    "static/js/main.aaf21dc8.js"
+    "static/js/main.33900dfb.js"
   ]
 }
