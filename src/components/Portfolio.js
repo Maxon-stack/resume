@@ -27,7 +27,7 @@ function Portfolio(props) {
             </button>
           </li>}
           {url ? <li>
-            <a rel="noopener noreferrer" target="_blank" href={url}>
+            <a rel="noopener noreferrer" target="_blank" href={`${window.location.origin.toString()}${url}`}>
               <Icon.Link />
             </a>
           </li> : null}
