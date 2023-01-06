@@ -1,5 +1,6 @@
 import Mock from "../mock";
-
+import resumePDF from "./Assets/files/Maxon_Corvil_Resume_2023.pdf"
+import profileImage from "./Assets/images/profile.jpg"
 const database = {
   information: {
     name: 'Maxon Corvil',
@@ -18,10 +19,10 @@ const database = {
       dribbble: '',
       github: 'https://github.com/Maxon-stack'
     },
-    brandImage: '/images/profile.jpg',
-    aboutImage: '/images/about-image.jpg',
+    brandImage: profileImage,
+    aboutImage: profileImage,
     aboutImageLg: '/images/about-image-lg.jpg',
-    cvfile: '/files/Maxon_Corvil_Resume_2023.pdf'
+    cvfile: resumePDF
   },
   services: [
     {

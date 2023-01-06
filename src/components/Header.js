@@ -77,14 +77,14 @@ function Header() {
           </li>
         </ul>
         <p className="mi-header-copyright">
-          &copy; {new Date().getFullYear()}{" "}
+          {new Date().getFullYear()}{" "}
           <b>
             <a
               rel="noopener noreferrer"
               target="_blank"
               href="https://nuclearthemes.com"
             >
-              NuclearThemes
+              Maxon Corvil
             </a>
           </b>
         </p>
