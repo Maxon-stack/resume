@@ -1,4 +1,4 @@
-![Future of javascript](/images/blog-image-4.jpg)
+![Future of javascript](/resume/images/blog-image-4.jpg)
 
 ### Future of javascript.
 

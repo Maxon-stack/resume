@@ -1,4 +1,4 @@
-![Difference between GatsbyJS & NextJS](/images/blog-image-5.jpg)
+![Difference between GatsbyJS & NextJS](/resume/images/blog-image-5.jpg)
 
 ### Difference between GatsbyJS & NextJS.
 

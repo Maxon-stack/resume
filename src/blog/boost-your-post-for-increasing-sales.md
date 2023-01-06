@@ -1,4 +1,4 @@
-![Boost your post for increasing sales](/images/blog-image-4.jpg)
+![Boost your post for increasing sales](/resume/images/blog-image-4.jpg)
 
 ### Boost your post for increasing sales.
 
