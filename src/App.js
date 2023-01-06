@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import * as Icon from "react-feather";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, HashRouter  } from "react-router-dom";
 import "./App.scss";
 import About from "./pages/About";
 import BlogDetails from "./pages/BlogDetails";
@@ -30,7 +30,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter basename="/resume">
+    <HashRouter >
     {
       /*
             <div className="light-mode">
@@ -57,7 +57,7 @@ function App() {
         <Route path="skills" element={<Skills />} />
         <Route path="*" element={<Notfound />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
