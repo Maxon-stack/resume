@@ -1,8 +1,15 @@
 import React from 'react'
+import ProgressiveImage from 'react-progressive-image';
 
-const SkillCard = ({skill}) => {
+const SkillCard = ({ skill }) => {
+  console.log(skill)
   return (
-    <div>SkillCard</div>
+    <div className='skill_Card'>
+      <div className='images'>
+      <img src={skill.logo} />
+      
+      </div>
+    </div>
   )
 }
 

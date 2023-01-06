@@ -3,35 +3,33 @@ import axios from "axios";
 import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
 import Sectiontitle from "../components/Sectiontitle";
+import SkillCard from "../components/SkillCard"
 import Spinner from "../components/Spinner";
 
 const Skills = () => {
   const [mySkills, setMySkills] = useState([]);
   useEffect(() => {
-    axios.get("/api/skills").then((response) => {
+    axios.get("/api/myskills").then((response) => {
       setMySkills(response.data);
-      console.log(mySkills)
     });
   }, []);
   return (
     <Layout>
       <Helmet>
-        <title>Resume - Chester React Personal Portfolio Template</title>
+        <title>Resume -Skills List</title>
         <meta
           name="description"
-          content="Chester React Personal Portfolio Template Resume Page"
+          content="Maxon Corvil Skills Page"
         />
       </Helmet>
-      <div className="mi-skills-area mi-section mi-padding-top">
+      <div className=" mi-section mi-padding-top">
           <div className="container">
             <Sectiontitle title="Skills" />
-            <div className="mi-skills">
-              <div className="row mt-30-reverse">
+            <div className="">
+              <div className="card_Container ">
                 {mySkills.map((skill) => (
                   <div key={skill.title}>
-                    <p>
-                      {skill.title}
-                    </p>
+                    <SkillCard skill={skill}/>
                   </div>
                 ))}
               </div>

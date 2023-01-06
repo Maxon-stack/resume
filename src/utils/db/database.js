@@ -70,11 +70,28 @@ const database = {
   mySkills: [
     {
       title:'React',
-      logo: '',
+      logo: '/resume/skillicons/react.png',
       years: 2,
-      placesUsed: '',
+      placesUsed: ['Amex', 'SAFCO', 'FAU','JHU','Personal'],
     },
-    {}
+    {
+      title:'React 2',
+      logo: '/resume/skillicons/react.png',
+      years: 2,
+      placesUsed: ['Amex', 'SAFCO', 'FAU','JHU','Personal'],
+    },
+    {
+      title:'React 3',
+      logo: '/resume/skillicons/react.png',
+      years: 2,
+      placesUsed: ['Amex', 'SAFCO', 'FAU','JHU','Personal'],
+    },
+    {
+      title:'React 4 ',
+      logo: '/resume/skillicons/react.png',
+      years: 2,
+      placesUsed: ['Amex', 'SAFCO', 'FAU','JHU','Personal'],
+    },
   ],
 
 
