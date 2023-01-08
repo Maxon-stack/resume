@@ -7,7 +7,7 @@ function Particle({lightMode}) {
       number: {
         value: 50,
         density: {
-          enable: false,
+          enable: true,
         },
       },
       color: {
@@ -30,9 +30,8 @@ function Particle({lightMode}) {
       move: {
         enable: true,
         random: true,
-        speed: 3,
-        direction: "top",
-        out_mode: "out",
+        speed: 6,
+
       },
     },
   };

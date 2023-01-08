@@ -39,6 +39,11 @@ const database = {
       title: "Mobile Application",
       icon: 'mobile',
       details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+    },
+    {
+      title: "Mobile Application",
+      icon: 'mobile',
+      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
     }
   ],
   reviews: [
