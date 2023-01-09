@@ -2,79 +2,82 @@
  * Social Icons
  */
 
-.mi-socialicons {
-  padding-left: 0;
-  margin-bottom: 0;
-
-  li {
+.links_ul{
+  display: flex;
+  justify-content: center;
+  li{
     list-style: none;
-    display: inline-block;
-    margin: 0 8px;
+    a{
+      .icon{
+        position: relative;
+        color: #262626;
+        transition: .5s;
+        z-index: 3;
+      }
+      width: 80px;
+      height: 80px;
+      background-color: #fff;
+      text-align: center;
+      line-height: 80px;
+      font-size: 35px;
+      margin: 0 10px;
+      display: block;
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+      border: 3px solid #fff;
+      z-index: 1;
+      &:hover{
+        &:before{
+          top:0;
+        }
+        .icon{
+          color: #fff;
+          transform: rotateY(360deg);
+        }
 
-    a {
-      display: inline-block;
-      transition: $transition;
-      color: $color-body;
-      font-size: 1.5rem;
-
-      &:hover {
-        color: $color-theme;
+      }
+      &:before{
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #0077b5;
+        transition: .5s;
+        z-index: 2;
       }
     }
-  }
-
-  &-bordered {
-    li {
+    &:nth-child(1){
       a {
-        height: 45px;
-        width: 45px;
-        line-height: 1;
-        text-align: center;
-        border: 2px solid $color-border;
-        border-radius: 100px;
-        line-height: 45px;
-        font-size: 1.3rem;
-
-        svg {
-          max-height: 100%;
-        }
-
-        &:hover {
-          border-color: $color-theme;
-        }
-      }
+				&:before {
+					background: #0077b5;
+				}
+			}
     }
-  }
-
-  @media #{$layout-tablet} {
-    &-bordered {
-      li {
-        a {
-          height: 42px;
-          width: 42px;
-          line-height: 42px;
-          font-size: 1.1rem;
-        }
-      }
-    }
-  }
-
-  @media #{$layout-mobile-lg} {
-    li {
+    &:nth-child(2){
       a {
-        font-size: 1.25rem;
-      }
+				&:before {
+					background: #72c1e8;
+				}
+			}
+    }    
+    &:nth-child(3){
+      a {
+				&:before {
+					background: #B3202C ;
+				}
+			}
+    }    
+    &:nth-child(4){
+      a {
+				&:before {
+					background: #3b5999;
+				}
+			}
     }
 
-    &-bordered {
-      li {
-        a {
-          height: 38px;
-          width: 38px;
-          line-height: 38px;
-          font-size: 1rem;
-        }
-      }
-    }
+
   }
 }

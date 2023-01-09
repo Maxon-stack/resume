@@ -33,7 +33,7 @@ function Home({ lightMode }) {
                 <div className="mi-home-content">
                   <h1>
                     Welcome, My name is{" "}
-                    <span className="color-theme">{information.name}</span>
+                    <span className="color-theme ">{information.name}</span>
                   </h1>
                   <p>{information.aboutContent}</p>
                   <Socialicons bordered />

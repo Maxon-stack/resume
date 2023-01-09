@@ -12,7 +12,7 @@ const database = {
     location: 'Miami Metropolitan Area, USA',
     socialLinks: {
       facebook: '',
-      twitter: '',
+      portfolio: '/resume#/portfolio',
       pinterest: '',
       behance: '',
       linkedin: 'https://www.linkedin.com/in/maxon-corvil/',
