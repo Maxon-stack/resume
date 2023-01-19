@@ -13,7 +13,7 @@
   }
   &:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
-    color: aqua;
+    color: black;
     .skill_card__header {
       height: 40px;
     }
@@ -40,7 +40,7 @@
 
   .skill_card__header{
     position: relative;
-    background-color: lighten(#E95A28, 5);
+    background-color: lighten(#0c0908, 5);
     height: 170px;
     margin: -20px -20px 20px -20px;
     transition: height .5s;

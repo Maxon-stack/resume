@@ -29,7 +29,7 @@ function Socialicons(props) {
         </a>
       </li>
       <li>
-        <a rel="noopener noreferrer" target="_blank" href={socialLinks.portfolio}>
+        <a rel="noopener noreferrer" href={socialLinks.portfolio}>
             <FontAwesomeIcon icon={faBriefcase} className="icon"/>
         </a>
       </li>

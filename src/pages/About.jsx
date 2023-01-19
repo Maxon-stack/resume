@@ -98,9 +98,8 @@ function About() {
                   Full Name:  <span className="color-theme">{information.name}</span>
                   </h3>
                   <p>
-                    I am a frontend web developer. I can provide clean code and
-                    pixel perfect design. I also make website more & more
-                    interactive with web animations.
+                  A Highly motivated individual with in-depth knowledge of languages and development tools, seeking a position in a growth-oriented company where I am able to use my skills to the advantage of the company while having the opportunity to develop my own skills and grow with the company. Overall, I am 
+                  seeking opportunities to utilize my software engineering skills in the creation of meaningful software applications.
                   </p>
                   <ul>
                     {!information.age ? null : (
@@ -149,7 +148,7 @@ function About() {
         </div>
         <div className="mi-service-area mi-section mi-padding-top">
           <div className="container">
-            <Sectiontitle title="Services" />
+            <Sectiontitle title="Soft Skills" />
             <div className="mi-service-wrapper">
               <div className="row mt-30-reverse">
                 {services.map((service) => (
@@ -166,7 +165,7 @@ function About() {
         </div>
         <div className="mi-review-area mi-section mi-padding-top mi-padding-bottom">
           <div className="container">
-            <Sectiontitle title="Reviews" />
+            <Sectiontitle title="Achi" />
             <div className="row justify-content-center">
               <div className="col-12">
                 <Slider className="mi-testimonial-slider" {...sliderSettings}>
