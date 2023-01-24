@@ -44,7 +44,7 @@ function Portfolio() {
         />
       </Helmet>
       <Suspense fallback={<Spinner />}>
-        <div className="mi-home-area  mi-section mi-padding-top mi-padding-bottom">
+        <div className="mi-about mi-section mi-padding-top mi-padding-bottom">
           <div className="container">
             <Sectiontitle title="Portfolio" />
             {<PortfolioView portfolio={currentPortfolio} />}

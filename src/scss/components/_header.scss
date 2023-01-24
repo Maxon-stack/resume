@@ -9,7 +9,7 @@
   transform: translateX(0);
   height: 100vh;
   width: 300px;
-  background: lighten($color-bg-body, 5);
+  background: lighten($color-bg-body, 20);
   border-right: 1px solid $color-border;
   z-index: 10;
   transition: $transition;

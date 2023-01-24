@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import Particle from "../components/Particle";
 import Socialicons from "../components/Socialicons";
 import Spinner from "../components/Spinner";
+import HomeBackground from "../components/HomeBackground";
 
 function Home({ lightMode }) {
   const [information, setInformation] = useState("");
@@ -26,7 +27,7 @@ function Home({ lightMode }) {
       </Helmet>
       <Suspense fallback={<Spinner />}>
         <div className="mi-home-area mi-padding-section">
-          <Particle lightMode={lightMode} />
+          <HomeBackground/>
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-10 col-12">
