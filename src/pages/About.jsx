@@ -10,11 +10,14 @@ import Sectiontitle from "../components/Sectiontitle";
 import Service from "../components/Service";
 import Spinner from "../components/Spinner";
 import Testimonial from "../components/Testimonial";
+import AboutCards from "../components/AboutCards";
 
 function About() {
   const [toggler, setToggler] = useState(false);
   const [information, setInformation] = useState("");
-  const [services, setServices] = useState([]);
+  const [softSkills, setSoftSkills] = useState([]);
+  const [awards, setAwards] = useState([]);
+  const [groups, setGroups] = useState([]);
   const [reviews, setReviews] = useState([]);
 
   const sliderSettings = {
@@ -47,11 +50,14 @@ function About() {
     axios.get("/api/information").then((response) => {
       setInformation(response.data);
     });
-    axios.get("/api/services").then((response) => {
-      setServices(response.data);
+    axios.get("/api/groups").then((response) => {
+      setGroups(response.data);
     });
-    axios.get("/api/reviews").then((response) => {
-      setReviews(response.data);
+    axios.get("/api/awards").then((response) => {
+      setAwards(response.data);
+    });
+    axios.get("/api/softskills").then((response) => {
+      setSoftSkills(response.data);
     });
   }, []);
 
@@ -95,11 +101,11 @@ function About() {
               <div className="col-lg-6">
                 <div className="mi-about-content">
                   <h3>
-                  Full Name:  <span className="color-theme">{information.name}</span>
+                    Full Name:  <span className="color-theme">{information.name}</span>
                   </h3>
                   <p>
-                  A Highly motivated individual with in-depth knowledge of languages and development tools, seeking a position in a growth-oriented company where I am able to use my skills to the advantage of the company while having the opportunity to develop my own skills and grow with the company. Overall, I am 
-                  seeking opportunities to utilize my software engineering skills in the creation of meaningful software applications.
+                    A Highly motivated individual with in-depth knowledge of languages and development tools, seeking a position in a growth-oriented company where I am able to use my skills to the advantage of the company while having the opportunity to develop my own skills and grow with the company. Overall, I am
+                    seeking opportunities to utilize my software engineering skills in the creation of meaningful software applications.
                   </p>
                   <ul>
                     {!information.age ? null : (
@@ -151,12 +157,12 @@ function About() {
             <Sectiontitle title="Soft Skills" />
             <div className="mi-service-wrapper">
               <div className="row mt-30-reverse">
-                {services.map((service) => (
+                {softSkills.map((skill) => (
                   <div
                     className="col-lg-4 col-md-6 col-12 mt-30"
-                    key={service.title}
+                    key={skill.title}
                   >
-                    <Service content={service} />
+                    <Service content={skill} />
                   </div>
                 ))}
               </div>
@@ -165,16 +171,36 @@ function About() {
         </div>
         <div className="mi-review-area mi-section mi-padding-top mi-padding-bottom">
           <div className="container">
-            <Sectiontitle title="Achi" />
-            <div className="row justify-content-center">
-              <div className="col-12">
-                <Slider className="mi-testimonial-slider" {...sliderSettings}>
-                  {reviews.map((review) => (
-                    <Testimonial key={review.id} content={review} />
+            <Sectiontitle title="Awards" />
+              <div className="mi-service-wrapper">
+                <div className="row mt-30-reverse">
+                  {awards.map((award) => (
+                    <div
+                      className="col-lg-4 col-md-6 col-12 mt-30"
+                      key={award.title}
+                    >
+                      <Service content={award} />
+                    </div>
                   ))}
-                </Slider>
+                </div>
               </div>
-            </div>
+          </div>
+        </div>
+        <div className="mi-review-area mi-section mi-padding-top mi-padding-bottom">
+          <div className="container">
+            <Sectiontitle title="Groups" />
+              <div className="mi-service-wrapper">
+                <div className="row mt-30-reverse">
+                  {groups.map((group) => (
+                    <div
+                      className="col-lg-4 col-md-6 col-12 mt-30"
+                      key={group.title}
+                    >
+                      <Service content={group} />
+                    </div>
+                  ))}
+                </div>
+              </div>
           </div>
         </div>
       </Suspense>

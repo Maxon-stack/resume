@@ -4,7 +4,7 @@ import profileImage from "./Assets/images/profile.jpg"
 const database = {
   information: {
     name: 'Maxon Corvil',
-    aboutContent: "I am a Experienced software engineer devoted to improving my skills through hands-on learning and development work. Well-versed in technology and writing code to create systems that are reliable and user-friendly. Adept at using JavaScript, Python, and other programming languages to produce clean, well-documented code. Often described as a well-organized and collaborative team player with strong communication and analytical abilities. Strategic thinker and innovative creator with the ability to morph to meet any company’s software engineering needs and further its success.",
+    aboutContent: "I am an Experienced software engineer devoted to improving my skills through hands-on learning and development work. Well-versed in technology and writing code to create systems that are reliable and user-friendly. Adept at using JavaScript, Python, and other programming languages to produce clean, well-documented code. Often described as a well-organized and collaborative team player with strong communication and analytical abilities. Strategic thinker and innovative creator with the ability to morph to meet any company’s software engineering needs and further its success.",
     age: 23,
     phone: '',
     language: 'English, Haitian Kreyòl ',
@@ -20,54 +20,60 @@ const database = {
     aboutImage: profileImage,
     aboutImageLg: '/images/about-image-lg.jpg',
     cvfile: resumePDF
-  },
-  services: [
+  },  
+  softSkills: [
     {
-      title: "Web Design",
-      icon: 'brush-alt',
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+      title: "Communication",
+      icon: 'wechat',
+      details: "The ability to convey or share ideas and feelings effectively.",
+      usedAt: ["American Express", "Johns Hopkins University" ,"Florida Atlantic University"]
     },
     {
-      title: "Web Development",
+      title: "Leadership",
+      icon: 'grow',
+      details: "the ability to mentor, train, or guide.",
+      usedAt: ["American Express", "Johns Hopkins University" ,"Florida Atlantic University"]
+    },
+    {
+      title: "Problem-solving",
       icon: 'code',
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+      details: "The ablity to analytically and creatively solve problems.",
+      usedAt: ["American Express", "Johns Hopkins University" ,"Florida Atlantic University"]
     },
     {
-      title: "Mobile Application",
-      icon: 'mobile',
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+      title: "Time management",
+      icon: 'alarm-clock',
+      details: " The ability to use your time wisely to work as efficiently as possible.",
+      usedAt: ["American Express", "Johns Hopkins University" ,"Florida Atlantic University"]
     },
     {
-      title: "Mobile Application",
-      icon: 'mobile',
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+      title: "Critical thinking",
+      icon: 'thought',
+      details: "The ability to explore a problem from every possible angle to devise the right solution.",
+      usedAt: ["American Express", "Johns Hopkins University" ,"Florida Atlantic University"]
     }
   ],
-  reviews: [
+  awards: [
     {
-      id: 1,
-      content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita impedit nobis tempore quaerat quibusdam, aliquid maxime tempora.",
-      author: {
-        name: 'Burdette Turner',
-        designation: 'Web Developer, Abc Company'
-      }
+      title: "Presidents List",
+      icon: 'graduation',
+      details: "The President's List includes the names of all undergraduate students who have completed 12 or more credits and who have attained a grade point average of 4.0.",
+      usedAt: ["Florida Atlantic University"]
     },
     {
-      id: 2,
-      content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita impedit nobis tempore quaerat quibusdam.",
-      author: {
-        name: 'Susan Yost',
-        designation: 'Client'
-      }
+      title: "Deans List",
+      icon: 'graduation',
+      details: "To be included in the Dean's List, an undergraduate student must complete a full-time load with a grade point average of 3.5 or greater",
+      usedAt: ["Florida Atlantic University"]
     },
+  ],
+  groups: [
     {
-      id: 3,
-      content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-      author: {
-        name: 'Irving Feeney',
-        designation: 'Fiverr Client'
-      }
-    }
+      title: "IEEE Computer Society",
+      icon: 'code-alt',
+      details: "The ability to convey or share ideas and feelings effectively.",
+      usedAt: ["Florida Atlantic University"]
+    },
   ],
   mySkills: [
     {
@@ -564,11 +570,18 @@ Mock.onGet("/api/information").reply(config => {
   return [200, response];
 });
 
-Mock.onGet("/api/services").reply(config => {
-  const response = database.services;
+Mock.onGet("/api/softskills").reply(config => {
+  const response = database.softSkills;
   return [200, response];
 });
-
+Mock.onGet("/api/awards").reply(config => {
+  const response = database.awards;
+  return [200, response];
+});
+Mock.onGet("/api/groups").reply(config => {
+  const response = database.groups;
+  return [200, response];
+});
 Mock.onGet("/api/reviews").reply(config => {
   const response = database.reviews;
   return [200, response];
